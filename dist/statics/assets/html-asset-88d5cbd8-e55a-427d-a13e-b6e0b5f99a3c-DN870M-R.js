@@ -1,0 +1,2 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";import"./script-asset-88d5cbd8-e55a-427d-a13e-b6e0b5f99a3c-C-K3qe1m.js";import"./chunk-RVHPVWYH-DIandYsq.js";const t=window.React.createElement,n=window.ReactDOM.render;async function o(){const e=await window.__module_federation__containers["89a138ec-fb50-41d6-a688-181213ef0b7a"].get("88d5cbd8-e55a-427d-a13e-b6e0b5f99a3c");n(t(e().default),document.getElementById("root"))}o();
+//# sourceMappingURL=html-asset-88d5cbd8-e55a-427d-a13e-b6e0b5f99a3c-DN870M-R.js.map

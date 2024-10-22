@@ -1,6 +1,6 @@
 .wix
 node_modules
-dist
+# dist
 
 # Logs
 logs
