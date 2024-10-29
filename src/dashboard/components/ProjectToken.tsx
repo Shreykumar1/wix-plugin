@@ -46,11 +46,15 @@ export default function ProjectToken() {
             value={projectToken}
             onChange={(e) => setProjectToken(e.currentTarget.value)}
           />
+          <div>{getEmbeddedScript.data?.projectToken}</div>
+          <div>{projectToken}</div>
+          <div>{getEmbeddedScript.data?.projectToken === projectToken ? "true" : "false"}</div>
+          <div>{projectToken.length !== 32 ? "true" : "fasle"}</div>
           <Button
-            // disabled={
-            //   getEmbeddedScript.data?.projectToken === projectToken ||
-            //   projectToken.length !== 32
-            // }
+            disabled={
+              getEmbeddedScript.data?.projectToken === projectToken 
+              // projectToken.length !== 32
+            }
             onClick={() => embedScript.mutate({ projectToken })}
           >
             <ButtonContent />

@@ -22,6 +22,8 @@ export const useEmbeds = <T extends Record<string, string>>() => {
     mutationFn: async (parameters) => {
       // https://dev.wix.com/docs/sdk/backend-modules/app-market/embedded-scripts/embed-script
       await embeddedScripts.embedScript({ parameters });
+      console.log(parameters);
+      
       return parameters;
     },
     onSuccess: (data) => {
